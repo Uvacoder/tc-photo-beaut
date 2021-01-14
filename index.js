@@ -3,6 +3,7 @@ const app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 // - Middleware - //
 app.use(express.static("public"));
@@ -31,8 +32,8 @@ app.post("/formSubmit", (req, res) => {
   const stmpTransport = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: "tandcmailer@gmail.com",
-      pass: "Tannerandcheyanne20",
+      user: process.env.USERNAME,
+      pass: process.env.PASSWORD,
     },
   });
 
