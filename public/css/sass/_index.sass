@@ -1,0 +1,232 @@
+
+/* NAVIGATION*/
+#desktop
+    z-index: 1
+    width: 100%
+    background: white
+    height: 7rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    .desktop-links
+        padding: 0 2rem
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 40%
+        li
+            list-style: none
+            a
+                font-weight: 300
+                text-decoration: none
+                color: #6b6b6b
+                transition: .3s
+                &:hover
+                    color: black
+
+.mobile
+    position: fixed
+    width: 100%
+    background: white
+    height: 3.5rem
+    padding: 0 20px
+    display: none
+    align-items: center
+    justify-content: space-between
+    z-index: 1
+    i
+        font-size: 28px
+.drawer
+    position: absolute
+    height: 100%
+    background: white
+    width: 100%
+    transition: 1s
+    display: flex
+    flex-direction: column
+    align-items: center
+    z-index: 2
+    .btn-container
+        width: 100%
+        display: flex
+        justify-content: flex-end
+        height: 3.5rem
+        button
+            height: 3.5rem
+            width: 3.5rem
+            border: none
+            background: #e0c045
+            color: white
+    .links
+        width: 100%
+        padding: 0 20px
+        display: flex
+        flex-direction: column
+        li
+            list-style: none
+            margin: 1rem 0
+            a
+                font-size: 28px
+                text-decoration: none
+                color: black
+                transition: .3s
+
+.hidden
+    display: none
+
+/* SECTIONS */
+.home
+    width: 100%
+    height: 90vh
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    color: white
+    font-size: 32px
+
+.about
+    background: white
+    height: auto
+    width: 100%
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    flex-direction: column
+    text-align: center
+    padding: 3rem 0
+    h1
+        margin-top:
+        margin-bottom: 3rem
+    p
+        margin-bottom: 3rem
+    h3
+        margin-bottom: 3rem
+    .services-row
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+        align-items: center
+
+        .service
+            margin: 10px
+            height: 300px
+            width: 100%
+            max-width: 400px
+            margin: 2rem
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 28px
+            color: white
+
+    .photo
+        background-image: url(https://lh3.googleusercontent.com/zDcbVWmjYX8HHk77vSGUFq6-FGb8GhSp9LLRWOfcjyN12mJlfjvC5IwrIA9mv6_OfqIvBfHT41V-KdU5-EykgGOVC53QtmS2qB0LEiRbJEfMh1Bp2Mm4s5sDNoFOSPf7djnTskvOhQ=w2400)
+        background-size: cover
+        background-position: center
+
+    .video
+        background-image: url(https://lh3.googleusercontent.com/jrbT-5_yhkzf05Awe0aEJr3uUW0ykMWhGnOhgIFprWhc6f59ZszSNX3k5VIrlHMLIFrgZQyMUaf1uc7X_48kPul96UiUwTZ69OaMY-iHwSjjJyiEAhH1dEncBgK097MmVX2nluTFZg=w2400)
+        background-size: cover
+        background-position: center
+
+    .beauty
+        background-image: url(https://lh3.googleusercontent.com/j7ntGND2-nONJ74paueQosal6ILxK879W2iW3pDA9IZe_JBX0BlXei5x4rmk6GDUWCkOVFEjhPqYQG2JPP-LYRfLUvA6yrqIE7YAt59kRbzolBn3Xa3Whq08rTlARzREEN6fQ9QXgw=w2400)
+        background-size: cover
+        background-position: center
+
+.cta
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    color: white
+    padding: 1rem
+    text-align: center
+    button
+        padding: 1rem 2rem
+        margin-top: 2rem
+        border-radius: 2rem
+        border: none
+        background: #e0c045
+
+.recent-work
+    padding: 3rem 0
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    background: white
+    text-align: center
+    iframe
+        margin: 2rem 0
+        width: 90%
+        height: 400px !important
+
+.footer
+    background: white
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 3rem 0
+
+/* parallax background images */
+.parallax-home-one
+    &::after
+        background-image: url(https://lh3.googleusercontent.com/ES5UHR4otjxACN_-P7n9aWw41xSanh10DxSkKO9E2htqjTAt5vjkyWJwIM-zdeaHMfnJkA2e-GXl4ZU5WzEXycES8-0vX0GuomtzcfnCbKzo6MyAuMG-SM4v8uxze5Obnsa_a1m5EQ=w2400)
+        background-position: bottom
+
+.parallax-home-two
+    &::after
+        background-image: url(https://lh3.googleusercontent.com/zrBO6bs9Ajs539gcxOECrXVXDSvXeVaGZwJUnmc5GVXDvQYrAamYT2-EGeu48dSdfnVt5ZE9ZxArTokRT7me9aLcaXatHb7jNKbBVxUckyxUIncUOm03NMqoyD0LoPGcbAaKxWwkVw=w2400)
+        background-position: center
+
+.parallax-three
+    &::after
+        background-image: url(https://lh3.googleusercontent.com/n4Vq7Am-d1wG7tVGdPW5HzwyYxBqrvCM7LvsIE4aCuAV_zJxo9NsvejtNdQqC8LZ1yxAH-HW6O2CJDyTMykDLFwuMbLhSDyZzMYd3p3_7ZErEQt6d38jr4rnyE4g_pvhexTQeuPmFw=w2400)
+        background-size: cover
+        background-position: center
+
+/* instagram images */
+.instagram
+    margin-top: 40px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    width: 300px
+
+.square
+    height: 150px
+    width: 150px
+    background-size: cover
+    background-position: center
+
+.one
+    background-image: url(https://lh3.googleusercontent.com/zDcbVWmjYX8HHk77vSGUFq6-FGb8GhSp9LLRWOfcjyN12mJlfjvC5IwrIA9mv6_OfqIvBfHT41V-KdU5-EykgGOVC53QtmS2qB0LEiRbJEfMh1Bp2Mm4s5sDNoFOSPf7djnTskvOhQ=w2400)
+.two
+    background-image: url(https://lh3.googleusercontent.com/zrBO6bs9Ajs539gcxOECrXVXDSvXeVaGZwJUnmc5GVXDvQYrAamYT2-EGeu48dSdfnVt5ZE9ZxArTokRT7me9aLcaXatHb7jNKbBVxUckyxUIncUOm03NMqoyD0LoPGcbAaKxWwkVw=w2400)
+.three
+    background-image: url(https://lh3.googleusercontent.com/3OU-5zjDPnfBcpo9WH2A1NDKAz3creqs88VsO1TAEg-1BVHmwiTqV5CpDoSycivpyqc-T0a2Ys2JNH_w6cw4foDF_MdbyN8xmBb5IslRnSIbJ3FfHkLfXP_U2gjtpy7vwSl-GuHROw=w2400)
+.four
+    background-image: url(https://lh3.googleusercontent.com/Ql8sniSL3MRwR2QCHNT5LIHn89MFiiJi461T6Azke-KMGaa6-Zwe7DAIeTkGFwrQHHbdOSYUioWQFsrOyA4sISilD3rJ1F0zneuaw3YWf5p2BCSafm17dMTJemrGnt4eQV9ZIFe7vA=w2400)
+.five
+    background-image: url(https://lh3.googleusercontent.com/P2Q1IjoogDEVRG9qo69gM2aK7sGcmdr_VvzEzrgH-_XVdVEjDZTOsnrKV04z7yKoT1NTsvs9C3u_a-Do7wgxYExXplh_sVgdiya8kZD_QsQSnSOxA23qrnlXrFZQXRnbvSFzTPvQqg=w2400)
+.six
+    background-image: url(https://lh3.googleusercontent.com/PnO4J8khuzAskk__4n3PrfIV9c0pUXVZaSE8IKTwzX0ghIo7I8iOYVT-9DuETO9ZBzbHG5omQG_eMJqA8Zy2-pTbfP8kJ66vdIm0WpOEvgR7sNdqs2e4DlpSDeQrqizQDmFM01ThyQ=w2400)
+.seven
+    background-image: url(https://lh3.googleusercontent.com/fvehVhywrebO3o-D6wtSa_c2DH2PFWyEymD1-a4ST9nJWAXNSwtxkRddjKu4bZuvWR8KjsOpDRjwlkRWMXXl0RhiPdYv2ZMJwAD7eU4Fdor3VX1mtyzCtszwILMX9t7HSJSKMiC6hg=w2400)
+.eight
+    background-image: url(https://lh3.googleusercontent.com/xT6B8qq3pInPRp9QUXo7xMmnY3xAW_DtxaqZKcqV3-FTT5lKGFg32po1o4YNS2d8eLKbYWu2n0ytkEAC8ZRQ0y8ypTJK9T3NJ7XjygyBB4VKWwRNOkClIKMLxqjs7FYptWIHmna-YA=w2400)
+
+@media only screen and ( min-width: 900px )
+    .recent-work
+        iframe
+            width: 70%
+    .instagram
+        align-items: center
+        justify-content: center
+        width: 100%

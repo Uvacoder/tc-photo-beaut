@@ -1,0 +1,41 @@
+.main
+    margin: 0 20px
+    // fill the available space //
+    height: 100vh
+    // make the children of the element closer to the viewport //
+    perspective: 2px
+    // hide the over flow
+    overflow-x: hidden
+
+// General styling, not necessarily related to parallax effect
+.section
+    position: relative
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    height: 80vh
+
+/* Different background colors for demo purpose */
+.static-one
+    background-color: white
+
+.static-two
+    background-color: red
+
+.static-three
+    background-color: white
+
+.parallax
+    &::after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        /* Scale the image to full */
+        background-size: cover
+        /* Move the element back then scale the element, it helps to appears more slowly */
+        transform: translateZ(-1px) scale(1.7)
+        /* Set the parallax section before the other elements. */
+        z-index: -1

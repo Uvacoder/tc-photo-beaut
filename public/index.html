@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- NAVIGATION-->
+    <header id="mobile" class="mobile">
+      <h1>T & C</h1>
+      <i id="hamburger" class="fas fa-bars"></i>
+    </header>
+
+    <div id="drawer" class="drawer hidden">
+      <div class="btn-container">
+        <button id="close-btn">X</button>
+      </div>
+      <ul class="links">
+        <li><a href="/">HOME</a></li>
+        <li><a href="/photo">PHOTO</a></li>
+        <li><a href="/video">VIDEO</a></li>
+        <li><a href="/beauty">BEAUTY</a></li>
+        <li><a href="/contact">CONTACT US</a></li>
+      </ul>
+    </div>
+
+    <main id="main" class="main">
+      <div id="desktop" class="'desktop">
+        <h1>T & C</h1>
+        <ul class="desktop-links">
+          <li><a href="/">HOME</a></li>
+          <li><a href="/photo">PHOTO</a></li>
+          <li><a href="/video">VIDEO</a></li>
+          <li><a href="/beauty">BEAUTY</a></li>
+          <li><a href="/contact">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <!-- HOME -->
+      <section id="home" class="parallax parallax-home-one home">
+        <h3>True love stories never have endings.</h3>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about static static-two">
+        <h1>Who Are We?</h1>
+        <p>
+          We are Tanner and Cheyanne, A Husband-Wife duo based in Salt Lake
+          City, Utah. Specializing in Photography, Videography, and Hair.
+        </p>
+        <h3>Services</h3>
+        <div class="services-row">
+          <div class="photo service">
+            <h3>Photography</h3>
+          </div>
+          <div class="video service">
+            <h3>Videography</h3>
+          </div>
+          <div class="beauty service">
+            <h3>Beauty</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION -->
+      <section id="cta" class="section parallax parallax-home-two cta">
+        <h2>10% Off Discount When Bundling Services!</h2>
+      </section>
+
+      <!-- YOUTUBE VIDEO -->
+      <section
+        id="recent-work"
+        class="static-video static static-two recent-work"
+      >
+        <h2>Recent Work</h2>
+        <iframe
+          height="100%"
+          src="https://www.youtube.com/embed/BEutqfWpFD4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          We had the amazing opportunity to film the wedding ceremony of Cory &
+          Bethany. They were married up Cotton Wood Canyon and it couldnt have
+          been any more perfect than it was that day.
+        </p>
+      </section>
+
+      <section class="section parallax parallax-three"></section>
+      <section id="footer" class="static static-three footer">
+        <a target="_blank" href="https://www.instagram.com/tcphotobeauty/"
+          >Follow us on Instagram</a
+        >
+        <div class="instagram">
+          <div class="square one"></div>
+          <div class="square two"></div>
+          <div class="square three"></div>
+          <div class="square four"></div>
+          <div class="square five"></div>
+          <div class="square six"></div>
+          <div class="square seven"></div>
+          <div class="square eight"></div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
