@@ -32,8 +32,8 @@ app.post("/formSubmit", (req, res) => {
   const stmpTransport = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: process.env.USERNAME,
-      pass: process.env.PASSWORD,
+      user: process.env.GMAIL_USERNAME,
+      pass: process.env.GMAIL_PASSWORD,
     },
   });
 
